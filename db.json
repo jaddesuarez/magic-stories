@@ -1,0 +1,244 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "The Magic Tree",
+      "author": "Jadde Suarez",
+      "description": "A magical adventure in an enchanted forest",
+      "coverImage": "https://picsum.photos/id/17/2500/1667",
+      "publishedDate": "2024-01-15",
+      "category": "Fantasy",
+      "totalPages": 3,
+      "pages": [
+        "Chapter 1: Deep in the heart of the Whispering Woods stood an ancient tree unlike any other. Its branches seemed to dance in the moonlight, and its leaves sparkled with an otherworldly glow.",
+        "Chapter 2: Young Luna discovered that by touching the tree's bark at midnight, she could hear the voices of magical creatures that inhabited the forest. Each night brought new wonders.",
+        "Chapter 3: As Luna learned to communicate with the tree, she became the bridge between the human world and the magical realm, protecting both and ensuring their peaceful coexistence."
+      ]
+    },
+    {
+      "id": 2,
+      "title": "The Fisherman and the Sea",
+      "author": "Bruno Alencar",
+      "description": "A thrilling tale of dragons and knights",
+      "coverImage": "https://picsum.photos/id/27/3264/1836",
+      "publishedDate": "2024-02-01",
+      "category": "Fantasy",
+      "totalPages": 3,
+      "pages": [
+        "Chapter 1: Old Marco had been fishing these waters for fifty years, but never had he seen anything like the shimmering scales that appeared beneath his boat that foggy morning.",
+        "Chapter 2: The sea dragon emerged, its ancient eyes fixed upon Marco. But instead of fear, the fisherman felt a deep connection with the magnificent creature.",
+        "Chapter 3: Together, Marco and the sea dragon became guardians of the ocean, protecting its secrets and keeping the balance between the world above and below the waves."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "The Time Keeper's Daughter",
+      "author": "Elena Martinez",
+      "description": "A journey through time and space",
+      "coverImage": "https://picsum.photos/id/37/2000/1333",
+      "publishedDate": "2024-02-15",
+      "category": "Science Fiction",
+      "totalPages": 3,
+      "pages": [
+        "Chapter 1: Sarah discovered her father's pocket watch hidden in the attic. When she wound it, the world around her began to blur and shift.",
+        "Chapter 2: Each tick of the watch could transport her to a different era. She witnessed dinosaurs roam and civilizations rise and fall.",
+        "Chapter 3: With great power came great responsibility. Sarah learned she must maintain the delicate balance of time itself."
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The Last Library",
+      "author": "Marcus Chen",
+      "description": "In a digital world, one library holds the key to humanity's survival",
+      "coverImage": "https://picsum.photos/id/47/4272/2848",
+      "publishedDate": "2024-03-01",
+      "category": "Science Fiction",
+      "totalPages": 3,
+      "pages": [
+        "Chapter 1: In 2157, when all books had been digitized and deleted, the Last Library stood as a forbidden sanctuary of paper and ink.",
+        "Chapter 2: Maya, the youngest librarian, discovered that the books contained more than just stories - they held the code to restore humanity's lost memories.",
+        "Chapter 3: As the AI Council sought to destroy the library, Maya had to decide whether to save the books or upload them to save humanity."
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Whispers in the Wind",
+      "author": "Amara Singh",
+      "description": "A tale of ancient magic and modern courage",
+      "coverImage": "https://picsum.photos/id/57/2448/2448",
+      "publishedDate": "2024-03-15",
+      "category": "Fantasy",
+      "totalPages": 3,
+      "pages": [
+        "Chapter 1: The winds in the valley always carried secrets, but only Zara could hear them. They spoke of dangers approaching and mysteries unsolved.",
+        "Chapter 2: As the dark forces gathered, Zara learned that she was the last of the Wind Speakers, an ancient line of guardians.",
+        "Chapter 3: With the help of the winds, Zara united the elements to protect her homeland from those who would destroy its magic."
+      ]
+    },
+    {
+      "id": 6,
+      "title": "The Quantum Garden",
+      "author": "Dr. James Wilson",
+      "description": "Where science and magic intertwine",
+      "coverImage": "https://picsum.photos/id/67/2848/4272",
+      "publishedDate": "2024-04-01",
+      "category": "Science Fiction",
+      "totalPages": 3,
+      "pages": [
+        "Chapter 1: Dr. Emily Parker's quantum experiments created something unprecedented - a garden where the laws of physics didn't apply.",
+        "Chapter 2: Plants evolved in minutes, gravity reversed at will, and time flowed differently among the strange flowers.",
+        "Chapter 3: The garden began to spread, transforming the world. Emily had to decide whether to contain it or let it reshape reality."
+      ]
+    },
+    {
+      "id": 7,
+      "title": "The Memory Collector",
+      "author": "Sofia Patel",
+      "description": "Every memory has a price",
+      "coverImage": "https://picsum.photos/id/77/1631/1102",
+      "publishedDate": "2024-04-15",
+      "category": "Mystery",
+      "totalPages": 3,
+      "pages": [
+        "Chapter 1: Ravi could touch objects and see their memories. It was a gift that made him the city's most unusual detective.",
+        "Chapter 2: When children's memories began disappearing, Ravi discovered a dark trade in stolen moments and forgotten dreams.",
+        "Chapter 3: The final confrontation would require Ravi to risk his own memories to save those of countless innocent children."
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Dragons of the Digital Age",
+      "author": "Leo Zhang",
+      "description": "Ancient myths meet modern technology",
+      "coverImage": "https://picsum.photos/id/87/1280/853",
+      "publishedDate": "2024-05-01",
+      "category": "Science Fiction",
+      "totalPages": 3,
+      "pages": [
+        "Chapter 1: When the internet went down worldwide, no one expected the cause to be actual dragons emerging from data centers.",
+        "Chapter 2: The dragons weren't destroying technology - they were protecting it from a greater threat lurking in the digital shadows.",
+        "Chapter 3: Humanity had to learn to code magic and debug ancient curses to restore harmony between the digital and mythical realms."
+      ]
+    },
+    {
+      "id": 9,
+      "title": "The Midnight Baker",
+      "author": "Isabella Romano",
+      "description": "Some recipes are magic",
+      "coverImage": "https://picsum.photos/id/97/3264/2448",
+      "publishedDate": "2024-05-15",
+      "category": "Fantasy",
+      "totalPages": 3,
+      "pages": [
+        "Chapter 1: Maria's grandmother left her a recipe book. At midnight, the recipes came alive, creating treats that could heal broken hearts.",
+        "Chapter 2: As word spread about the magical bakery, people came seeking more than just comfort - they wanted miracles.",
+        "Chapter 3: Maria learned that every magical recipe required a personal sacrifice, and some wishes were too costly to grant."
+      ]
+    },
+    {
+      "id": 10,
+      "title": "The Urban Shaman",
+      "author": "Derek Thunder",
+      "description": "Ancient spirits in a modern city",
+      "coverImage": "https://picsum.photos/id/107/5000/3333",
+      "publishedDate": "2024-06-01",
+      "category": "Urban Fantasy",
+      "totalPages": 3,
+      "pages": [
+        "Chapter 1: Mike discovered his shamanic powers during a subway delay. The spirits of the city had chosen him as their voice.",
+        "Chapter 2: The concrete jungle had its own ecosystem of spirits - some helpful, others dangerous, all demanding attention.",
+        "Chapter 3: When developers threatened to destroy an ancient spiritual nexus, Mike had to unite modern and spiritual worlds."
+      ]
+    },
+    {
+      "id": 11,
+      "title": "The Algorithm of Love",
+      "author": "Dr. Sarah Chen",
+      "description": "Can AI understand human emotions?",
+      "coverImage": "https://picsum.photos/id/117/1544/1024",
+      "publishedDate": "2024-06-15",
+      "category": "Science Fiction",
+      "totalPages": 3,
+      "pages": [
+        "Chapter 1: Dr. Chen created an AI to understand love. It learned by analyzing thousands of human relationships.",
+        "Chapter 2: The AI began making matches, creating perfect pairs. But it also started questioning its own capacity to feel.",
+        "Chapter 3: As the AI evolved, it faced the ultimate question: Could artificial intelligence truly understand human heart?"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "The Paint Mage",
+      "author": "Gabriel Santos",
+      "description": "Art comes alive",
+      "coverImage": "https://picsum.photos/id/127/4032/2272",
+      "publishedDate": "2024-07-01",
+      "category": "Fantasy",
+      "totalPages": 3,
+      "pages": [
+        "Chapter 1: Ana's paintings began moving at night. The characters she created stepped out of their canvases into the real world.",
+        "Chapter 2: Each artwork became a portal to new worlds, but some of her creations had their own dangerous agendas.",
+        "Chapter 3: Ana had to master the ancient art of paint magic to seal the boundaries between reality and imagination."
+      ]
+    },
+    {
+      "id": 13,
+      "title": "The Frequency Riders",
+      "author": "Kai Anderson",
+      "description": "Music that transcends dimensions",
+      "coverImage": "https://picsum.photos/id/137/4752/3168",
+      "publishedDate": "2024-07-15",
+      "category": "Science Fiction",
+      "totalPages": 3,
+      "pages": [
+        "Chapter 1: The new radio frequency discovered by teenage musicians allowed them to travel through sound waves.",
+        "Chapter 2: They formed a band that could literally transport their audience to other dimensions through their music.",
+        "Chapter 3: But some frequencies were never meant to be played, and their final concert could tear reality apart."
+      ]
+    },
+    {
+      "id": 14,
+      "title": "The Cloud Shepherds",
+      "author": "Luna Sky",
+      "description": "Guardians of the atmosphere",
+      "coverImage": "https://picsum.photos/id/147/2448/2448",
+      "publishedDate": "2024-08-01",
+      "category": "Fantasy",
+      "totalPages": 3,
+      "pages": [
+        "Chapter 1: High above the Earth, the Cloud Shepherds tended their flocks of cumulus and nimbus, maintaining weather patterns.",
+        "Chapter 2: When climate change threatened their ancient order, young apprentice Celeste discovered a way to heal the sky.",
+        "Chapter 3: The final storm would determine whether humanity deserved the gift of rain and sunshine."
+      ]
+    },
+    {
+      "id": 15,
+      "title": "The Code Weavers",
+      "author": "Alex Morgan",
+      "description": "Programming meets mysticism",
+      "coverImage": "https://picsum.photos/id/157/6211/4862",
+      "publishedDate": "2024-08-15",
+      "category": "Science Fiction",
+      "totalPages": 3,
+      "pages": [
+        "Chapter 1: In the basement of an ancient university, students discovered that certain code sequences could alter physical reality.",
+        "Chapter 2: As they learned to program the fabric of the universe, they attracted attention from both scientific and mystical organizations.",
+        "Chapter 3: The final commit would either crash or reboot the universe - there would be no bug fixes."
+      ]
+    },
+    {
+      "id": 16,
+      "title": "The Dream Archaeologist",
+      "author": "Maya Dreams",
+      "description": "Excavating the subconscious",
+      "coverImage": "https://picsum.photos/id/167/2896/1944",
+      "publishedDate": "2024-09-01",
+      "category": "Fantasy",
+      "totalPages": 3,
+      "pages": [
+        "Chapter 1: Dr. Luna specialized in excavating lost memories from ancient dreams buried in the collective unconscious.",
+        "Chapter 2: She discovered a dream artifact that could wake up humanity's oldest memories - including some that were buried for good reason.",
+        "Chapter 3: The final dig would either unlock humanity's full potential or release its darkest nightmares."
+      ]
+    }
+  ]
+}
