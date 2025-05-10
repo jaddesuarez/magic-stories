@@ -21,7 +21,8 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { useUser } from "@/hooks/useUser";
+import { useUser } from "@/lib/hooks/useUser";
+import { URLS } from "@/lib/consts";
 
 import schoolBag from "@/assets/school_bag_blue.png";
 
@@ -45,7 +46,7 @@ export const Login = () => {
 
   useEffect(() => {
     if (user) {
-      navigate("/");
+      navigate(URLS.HOME);
     }
   }, [user, navigate]);
 

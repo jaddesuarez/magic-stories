@@ -2,7 +2,11 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-color: #f0f9ff;
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 251, 235),
+    rgb(254, 243, 199)
+  );
   background-image: radial-gradient(
       circle at 25px 25px,
       #ffd6e0 2%,

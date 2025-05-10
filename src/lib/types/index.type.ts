@@ -7,9 +7,9 @@ export type TBook = {
   title: string;
   author: string;
   description: string;
-  coverImage: string;
+  coverColor: string;
   publishedDate: string;
-  category: string;
+  categoryId: number;
   totalPages: number;
   pages: string[];
 };

@@ -1,4 +1,4 @@
-import { TUser } from "@/types/index.type";
+import { TUser } from "@/lib/types/index.type";
 
 import { atom } from "jotai";
 

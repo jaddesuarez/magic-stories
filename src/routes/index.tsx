@@ -4,6 +4,7 @@ import { Home } from "@/pages/Home";
 import { BookCatalog } from "@/pages/BookCatalog";
 import { BookReader } from "@/pages/BookReader";
 import { Login } from "@/pages/Login";
+import { URLS } from "@/lib/consts";
 
 const router = createBrowserRouter([
   {
@@ -16,15 +17,15 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "login",
+        path: URLS.LOGIN,
         element: <Login />,
       },
       {
-        path: "books",
+        path: URLS.CATALOG,
         element: <BookCatalog />,
       },
       {
-        path: "books/:id",
+        path: `${URLS.READER}/:id`,
         element: <BookReader />,
       },
     ],

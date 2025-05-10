@@ -1,5 +1,5 @@
 const API_URL = "http://localhost:3001";
-import { TBook } from "@/types/index.type";
+import { TBook } from "@/lib/types/index.type";
 
 export const bookService = {
   // Get all books
@@ -15,8 +15,8 @@ export const bookService = {
   },
 
   // Filter books by category
-  filterBooks: async (category: string): Promise<TBook[]> => {
-    const response = await fetch(`${API_URL}/books?category=${category}`);
+  filterBooks: async (categoryId: number): Promise<TBook[]> => {
+    const response = await fetch(`${API_URL}/books?categoryId=${categoryId}`);
     return response.json();
   },
 };
