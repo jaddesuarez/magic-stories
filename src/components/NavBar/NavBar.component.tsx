@@ -22,13 +22,13 @@ const NavBar: React.FC = () => {
       <div className="flex gap-4 items-center">
         <button
           onClick={() => navigate(URLS.CATALOG)}
-          className="text-amber-600 font-bold text-lg px-3 py-1 cursor-pointer relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
+          className="text-orange-500 font-bold text-lg px-3 py-1 cursor-pointer relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
         >
           Catalog
         </button>
         <Button
           variant="outline"
-          className="bg-amber-600 text-white rounded-full cursor-pointer p-5"
+          className="bg-orange-500 text-white rounded-full cursor-pointer p-5"
           onClick={() => navigate(user ? URLS.CATALOG : URLS.LOGIN)}
         >
           {user ? user.userId : "Get Started"}
