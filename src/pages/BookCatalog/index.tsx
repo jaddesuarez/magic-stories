@@ -4,8 +4,13 @@ import { BookCard } from "@/components/BookCard/BookCard.component";
 import { Button } from "@/components/ui/button";
 import { CATEGORIES } from "@/lib/consts";
 import { cn } from "@/lib/utils";
+import { useUser } from "@/lib/hooks/useUser";
+import { useNavigate } from "react-router-dom";
+import { URLS } from "@/lib/consts";
 
 export const BookCatalog: React.FC = () => {
+  const { user } = useUser();
+  const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState(0);
   const { books, isLoadingBooks, errorBooks, booksByCategory } = useBooks(
     undefined,
@@ -13,6 +18,10 @@ export const BookCatalog: React.FC = () => {
   );
 
   const displayedBooks = selectedCategory === 0 ? books : booksByCategory;
+
+  if (!user) {
+    navigate(URLS.LOGIN);
+  }
 
   if (isLoadingBooks) {
     return (

@@ -46,7 +46,7 @@ export const Login = () => {
 
   useEffect(() => {
     if (user) {
-      navigate(URLS.HOME);
+      navigate(URLS.CATALOG);
     }
   }, [user, navigate]);
 
