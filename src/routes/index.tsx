@@ -4,10 +4,10 @@ import { Home } from "@/pages/Home";
 import { BookCatalog } from "@/pages/BookCatalog";
 import { BookReader } from "@/pages/BookReader";
 import { Login } from "@/pages/Login";
+import { BookMetrics } from "@/pages/BookMetrics";
 import { URLS } from "@/lib/consts";
 import App from "@/App";
 import { PrivateRoute } from "@/components/PrivateRoute/PrivateRoute.component";
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,6 +31,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <BookReader />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: `${URLS.BOOK_METRICS}/:id`,
+        element: (
+          <PrivateRoute>
+            <BookMetrics />
           </PrivateRoute>
         ),
       },

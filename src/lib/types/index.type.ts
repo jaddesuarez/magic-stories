@@ -12,3 +12,16 @@ export type TBook = {
   categoryId: number;
   pages: string[];
 };
+
+export type TBookSection = {
+  bookId: number;
+  startTime: Date;
+  pageTimings: TBookSectionPageTiming[];
+  endTime: Date | null;
+  completed: boolean;
+};
+
+export type TBookSectionPageTiming = {
+  pageIndex: number;
+  timeMs: number;
+};

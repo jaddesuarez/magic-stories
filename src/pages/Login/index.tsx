@@ -106,7 +106,7 @@ export const Login = () => {
                 </div>
                 <Button
                   type="submit"
-                  className="w-full py-6 text-lg rounded-full bg-blue-300 hover:bg-blue-400 cursor-pointer"
+                  className="w-full py-6 text-lg rounded-full bg-blue-300 hover:bg-blue-400"
                 >
                   Start Reading!
                 </Button>

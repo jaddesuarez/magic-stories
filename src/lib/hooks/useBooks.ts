@@ -1,5 +1,6 @@
 import { bookService } from "@/services/bookService";
 import { useQuery } from "@tanstack/react-query";
+import { TBook } from "@/lib/types/index.type";
 
 export const useBooks = (id?: number, categoryId?: number) => {
   const {
@@ -12,12 +13,14 @@ export const useBooks = (id?: number, categoryId?: number) => {
   });
 
   const {
-    data: book,
+    data: booksById,
     isLoading: isLoadingBook,
     error: errorBook,
   } = useQuery({
     queryKey: ["book", id],
-    queryFn: () => bookService.getBookById(id ?? 0),
+    queryFn: () => bookService.getBookById(id!),
+    enabled: !!id,
+    select: (data: TBook[]) => data[0],
   });
 
   const {
@@ -33,7 +36,7 @@ export const useBooks = (id?: number, categoryId?: number) => {
     books,
     isLoadingBooks,
     errorBooks,
-    book,
+    book: booksById,
     isLoadingBook,
     errorBook,
     booksByCategory,

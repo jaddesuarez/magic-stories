@@ -3,6 +3,7 @@ export const URLS = {
   LOGIN: "/login",
   CATALOG: "/catalog",
   READER: "/reader",
+  BOOK_METRICS: "/book-metrics",
 };
 
 export const CATEGORIES = [

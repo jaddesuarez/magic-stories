@@ -9,8 +9,8 @@ export const bookService = {
   },
 
   // Get a single book by id
-  getBookById: async (id: number): Promise<TBook> => {
-    const response = await fetch(`${API_URL}/books/${id}`);
+  getBookById: async (id: number): Promise<TBook[]> => {
+    const response = await fetch(`${API_URL}/books?id=${id}`);
     return response.json();
   },
 

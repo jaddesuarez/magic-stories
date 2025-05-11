@@ -54,7 +54,7 @@ export const BookCatalog: React.FC = () => {
               key={category.id}
               onClick={() => setSelectedCategory(category.id)}
               className={cn(
-                "p-6 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 cursor-pointer shadow-md",
+                "p-6 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-md",
                 selectedCategory === category.id
                   ? "bg-blue-300 text-white shadow-lg ring-2 ring-blue-400 hover:bg-blue-500"
                   : "bg-white text-blue-400 hover:bg-blue-50"
