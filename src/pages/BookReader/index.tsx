@@ -19,11 +19,13 @@ export const BookReader: React.FC = () => {
 
   const handlePageChange = (newPage: number) => {
     setShouldCount(false);
-    updatePageTiming(currentPage, currentPageTiming);
+
     if (newPage > (book?.pages.length || 0) - 1) {
       finishBook();
       return;
     }
+
+    updatePageTiming(currentPage, currentPageTiming);
 
     setPageEffect(true);
     setTimeout(() => {
@@ -43,7 +45,7 @@ export const BookReader: React.FC = () => {
   };
 
   const finishBook = () => {
-    endSection();
+    endSection(currentPage, currentPageTiming);
     navigate(`${URLS.BOOK_METRICS}/${id}`);
   };
 

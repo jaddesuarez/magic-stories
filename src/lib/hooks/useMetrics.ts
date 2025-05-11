@@ -19,36 +19,46 @@ export const useMetrics = () => {
     [setBookSection]
   );
 
-  const endSection = useCallback(() => {
-    if (!bookSection) return;
-    setBookSection({
-      ...bookSection,
-      endTime: new Date(),
-      completed: true,
-    });
-  }, [bookSection, setBookSection]);
-
   const updatePageTiming = useCallback(
     (pageIndex: number, timeMs: number) => {
       if (!bookSection) return;
+
+      const updatedPageTimings = [
+        ...bookSection.pageTimings.filter(
+          (timing) => timing.pageIndex !== pageIndex
+        ),
+        {
+          pageIndex,
+          timeMs:
+            timeMs +
+            (bookSection.pageTimings.find(
+              (timing) => timing.pageIndex === pageIndex
+            )?.timeMs || 0),
+        },
+      ].sort((a, b) => a.pageIndex - b.pageIndex);
+
       setBookSection({
         ...bookSection,
-        pageTimings: [
-          ...bookSection.pageTimings.filter(
-            (timing) => timing.pageIndex !== pageIndex
-          ),
-          {
-            pageIndex,
-            timeMs:
-              timeMs +
-              (bookSection.pageTimings.find(
-                (timing) => timing.pageIndex === pageIndex
-              )?.timeMs || 0),
-          },
-        ],
+        pageTimings: updatedPageTimings,
       });
+
+      return updatedPageTimings;
     },
     [bookSection, setBookSection]
+  );
+
+  const endSection = useCallback(
+    (pageIndex: number, timeMs: number) => {
+      if (!bookSection) return;
+      const updatedPageTimings = updatePageTiming(pageIndex, timeMs);
+      setBookSection({
+        ...bookSection,
+        endTime: new Date(),
+        completed: true,
+        pageTimings: updatedPageTimings || [],
+      });
+    },
+    [bookSection, setBookSection, updatePageTiming]
   );
 
   return {
