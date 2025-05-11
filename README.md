@@ -1,54 +1,100 @@
-# React + TypeScript + Vite
+# Magic Stories
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Magic Stories is a dynamic web application that lets users explore and read interactive stories. Built with modern technologies including React, TypeScript, and Vite, it features a responsive UI with custom book covers, progress tracking, and a user-friendly navigation system. The app includes user authentication, a book catalog, and an immersive reading experience with animated page transitions.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Before you begin, ensure you have the following installed:
 
-## Expanding the ESLint configuration
+- Node.js (Latest LTS version recommended)
+- npm (comes with Node.js)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clone the repository:
+
+```bash
+git clone https://github.com/jaddesuarez/magic-stories.git
+cd magic-stories
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+## Running the Application
+
+### Development Mode
+
+1. Start the backend server (JSON Server):
+
+```bash
+npm run server
+```
+
+This will start the backend server on port 3001.
+
+2. In a new terminal, start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`
+
+## Testing
+
+The project uses Vitest for testing.
+
+Run tests in watch mode:
+
+```bash
+npm test
+```
+
+2. Run tests with coverage:
+
+```bash
+npm run test:coverage
+```
+
+3. Run tests with UI:
+
+```bash
+npm run test:ui
+```
+
+## Tech Stack
+
+- React
+- TypeScript
+- Vite
+- TailwindCSS
+- React Query
+- React Router
+- Vitest for testing
+- JSON Server for backend
+- ESLint for linting
+
+## Project Structure
+
+- `/src`
+  - `/assets` - Images and other static assets
+  - `/components` - Reusable React components
+  - `/lib`
+    - `/consts` - Constants and configuration
+    - `/hooks` - Custom React hooks
+    - `/types` - TypeScript type definitions
+    - `/utils` - Utility functions
+  - `/pages` - Page components
+  - `/routes` - Route configuration and components
+  - `/services` - API service functions and data fetching
+  - `/test` - Test utilities and mock data
+- `/public`
+  - `favicon.ico`
+- `db.json` - JSON Server database with books and users data
+- `vite.config.ts` - Vite build and dev server configuration
+- `tsconfig.json` - TypeScript compiler configuration
+- `vitest.config.ts` - Vitest testing configuration

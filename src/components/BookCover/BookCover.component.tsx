@@ -28,5 +28,5 @@ export const BookCover: React.FC<BookCoverProps> = ({ color }) => {
         return BookBlack;
     }
   };
-  return <img src={getBookCover()} alt="book cover" />;
+  return <img src={getBookCover()} alt="book cover" data-testid="book-cover" />;
 };
