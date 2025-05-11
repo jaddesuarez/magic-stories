@@ -15,6 +15,7 @@ export type TBook = {
 
 export type TBookSection = {
   bookId: number;
+  bookTitle: string;
   startTime: Date;
   pageTimings: TBookSectionPageTiming[];
   endTime: Date | null;

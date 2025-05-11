@@ -70,7 +70,7 @@ export const Login = () => {
             <div className="w-48 h-48 my-6">
               <img
                 src={schoolBag}
-                alt="Cute reading mascot"
+                alt="School Bag"
                 className="w-full h-full object-cover rounded-full border-4 border-yellow-500 shadow-lg animate-[bounce_2s_ease-in-out_infinite] hover:scale-105 transition-transform"
               />
             </div>

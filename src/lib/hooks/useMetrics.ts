@@ -6,9 +6,10 @@ export const useMetrics = () => {
   const [bookSection, setBookSection] = useAtom(bookSectionAtom);
 
   const startSection = useCallback(
-    (bookId: number) => {
+    (bookId: number, bookTitle: string) => {
       setBookSection({
         bookId: bookId,
+        bookTitle: bookTitle,
         startTime: new Date(),
         pageTimings: [],
         endTime: null,
@@ -27,20 +28,33 @@ export const useMetrics = () => {
     });
   }, [bookSection, setBookSection]);
 
-  const addPageTiming = useCallback(
+  const updatePageTiming = useCallback(
     (pageIndex: number, timeMs: number) => {
       if (!bookSection) return;
       setBookSection({
         ...bookSection,
-        pageTimings: [...bookSection.pageTimings, { pageIndex, timeMs }],
+        pageTimings: [
+          ...bookSection.pageTimings.filter(
+            (timing) => timing.pageIndex !== pageIndex
+          ),
+          {
+            pageIndex,
+            timeMs:
+              timeMs +
+              (bookSection.pageTimings.find(
+                (timing) => timing.pageIndex === pageIndex
+              )?.timeMs || 0),
+          },
+        ],
       });
     },
     [bookSection, setBookSection]
   );
 
   return {
+    bookSection,
     startSection,
     endSection,
-    addPageTiming,
+    updatePageTiming,
   };
 };
