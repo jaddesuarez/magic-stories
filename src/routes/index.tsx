@@ -6,6 +6,7 @@ import { BookReader } from "@/pages/BookReader";
 import { Login } from "@/pages/Login";
 import { URLS } from "@/lib/consts";
 import App from "@/App";
+import { PrivateRoute } from "@/components/PrivateRoute/PrivateRoute.component";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,11 @@ const router = createBrowserRouter([
       },
       {
         path: `${URLS.READER}/:id`,
-        element: <BookReader />,
+        element: (
+          <PrivateRoute>
+            <BookReader />
+          </PrivateRoute>
+        ),
       },
     ],
   },

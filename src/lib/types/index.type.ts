@@ -10,6 +10,5 @@ export type TBook = {
   coverColor: string;
   publishedDate: string;
   categoryId: number;
-  totalPages: number;
   pages: string[];
 };
